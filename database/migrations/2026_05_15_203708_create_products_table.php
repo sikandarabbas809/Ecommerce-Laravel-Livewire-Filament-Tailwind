@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('is_active')->default(true);
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_stock')->default(true);
-            $table->boolean('on_Sale')->default(false);
+            $table->boolean('on_sale')->default(false);
             $table->timestamps();
         });
     }
