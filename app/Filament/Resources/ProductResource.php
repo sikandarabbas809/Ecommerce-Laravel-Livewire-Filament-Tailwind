@@ -58,6 +58,7 @@ class ProductResource extends Resource
                         ->maxLength(255)
                         ->disabled()
                         ->dehydrated()
+                        
                         ->unique(Product::class, 'slug', ignoreRecord:true),
 
                         MarkdownEditor::make('description')
